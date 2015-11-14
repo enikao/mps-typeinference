@@ -48,6 +48,9 @@
         <child id="1175147624276" name="body" index="2sgrp5" />
       </concept>
       <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
+      <concept id="1220357310820" name="jetbrains.mps.lang.typesystem.structure.AddDependencyStatement" flags="nn" index="yXGxS">
+        <child id="1220357350423" name="dependency" index="yXQkb" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -80,7 +83,6 @@
         <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
-        <child id="1174662598553" name="nodeToCheck" index="1ZmcU8" />
       </concept>
       <concept id="1174663239020" name="jetbrains.mps.lang.typesystem.structure.CreateGreaterThanInequationStatement" flags="nn" index="1ZoDhX" />
     </language>
@@ -108,6 +110,16 @@
     <property role="TrG5h" value="typeof_AssignmentStatement" />
     <property role="3GE5qa" value="statements" />
     <node concept="3clFbS" id="Uhkfo4F7GT" role="18ibNy">
+      <node concept="yXGxS" id="Uhkfo4FJBw" role="3cqZAp">
+        <node concept="2OqwBi" id="Uhkfo4FJDD" role="yXQkb">
+          <node concept="1YBJjd" id="Uhkfo4FJBU" role="2Oq$k0">
+            <ref role="1YBMHb" node="Uhkfo4F7GV" resolve="assignmentStatement" />
+          </node>
+          <node concept="3TrEf2" id="Uhkfo4FJI8" role="2OqNvi">
+            <ref role="3Tt5mk" to="rlul:Uhkfo4F7DZ" />
+          </node>
+        </node>
+      </node>
       <node concept="1ZoDhX" id="Uhkfo4Fm9k" role="3cqZAp">
         <property role="3wDh2S" value="false" />
         <node concept="mw_s8" id="Uhkfo4Fm9r" role="1ZfhK$">
@@ -132,14 +144,6 @@
                 <ref role="3Tt5mk" to="rlul:Uhkfo4Fe37" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="Uhkfo4Fs_F" role="1ZmcU8">
-          <node concept="1YBJjd" id="Uhkfo4Fs$7" role="2Oq$k0">
-            <ref role="1YBMHb" node="Uhkfo4F7GV" resolve="assignmentStatement" />
-          </node>
-          <node concept="3TrEf2" id="Uhkfo4FsIx" role="2OqNvi">
-            <ref role="3Tt5mk" to="rlul:Uhkfo4F7DZ" />
           </node>
         </node>
       </node>
